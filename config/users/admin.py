@@ -8,9 +8,17 @@ class CustomUserAdmin(admin.ModelAdmin):
     ''' Custom User Admin '''
 
     fieldsets = UserAdmin.fieldsets + (
-        ('Custom Profile', {
-            'fields': ('avatar', 'gender', 'birthdate', 'language','currency', 'superhost')
-        }),
+        ('Custom Profile',
+         {
+            'fields': (
+                'avatar',
+                'gender',
+                'birthdate',
+                'language',
+                'currency',
+                'superhost',)
+            },
+         ),
     )
 
     # list_display = ('username', 'email', 'gender', 'language', )
