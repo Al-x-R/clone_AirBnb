@@ -21,5 +21,7 @@ class CustomUserAdmin(admin.ModelAdmin):
          ),
     )
 
+#admin.site.register(models.User, CustomUserAdmin)
+    # video 26
     # list_display = ('username', 'email', 'gender', 'language', )
     # list_filter = ('language', 'currency','superhost',)
